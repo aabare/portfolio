@@ -75,12 +75,11 @@ header nav ul li a {
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
 }
 
 body p {
-    font-size: 18px;
     display: flex;
     font-weight: bold;
     justify-content: right;
@@ -98,12 +97,22 @@ body p {
 }
 
 .about-me p {
+    font-size: 18px;
     margin: 50px auto 0 auto;
 }
 
 .work h2 {
     font-size: 36px;
     margin: 50px;
+}
+
+.run-buddy {
+    color: black;
+    font-size: 30px;
+}
+
+.run-buddy img {
+    width: 20%;
 }
 
 .contact-me{
@@ -114,6 +123,11 @@ body p {
 .contact-me h2 {
     font-size: 36px;
     margin: 50px;
+}
+
+.contact-me a {
+    text-decoration: none;
+    margin-right: 5px;
 }
 
 .contact-me p {
