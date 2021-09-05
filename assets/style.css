@@ -18,24 +18,21 @@ body {
 header {
     padding: 20px 35px;
     background-color: midnightblue;
-    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 
   
 
 }
 
 header h1 {
+    display: inline-block;
     font-weight: bold;
     font-size: 36px;
     color: white;
     text-shadow: 0 0 10px black;
 }
 
-header h1 a {
-    text-align: right;
-}
+
 header a {
     text-decoration: none;
     color: white;
@@ -48,16 +45,14 @@ header nav {
 
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     list-style: none;
+    float: right;
+    margin-top: -50px;
 
 }
 
 header nav ul li a {
     padding: 10px 15px;
-    align-items: right;
     font-weight: bold;
     font-size: 22px;
     text-shadow: 0 0 10px black;
