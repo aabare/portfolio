@@ -57,3 +57,22 @@ header nav ul li a {
     font-size: 22px;
     text-shadow: 0 0 10px black;
 }
+
+
+.hero {
+    padding: 80px;
+    background-image: url(./images/nyc-hero.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    background-attachment: center;
+    background-position: 80%;
+}
+
+.hero h2 {
+    padding: 20px;
+    background-color: midnightblue;
+    color: white;
+}
+
