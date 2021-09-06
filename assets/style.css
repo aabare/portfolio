@@ -5,6 +5,7 @@ padding: 0;
 }
 
 header {
+    width: 100%;
     padding: 20px 35px;
     background-color: midnightblue;
     justify-content: space-between;
@@ -16,6 +17,7 @@ header {
 header h1 {
     display: inline-block;
     font-weight: bold;
+    margin: 0;
     font-size: 36px;
     color: white;
     text-shadow: 0 0 10px black;
@@ -59,11 +61,13 @@ header nav ul li a {
     padding: 80px;
     background-image: url(./images/nyc-hero.jpg);
     background-size: cover;
+    background-color: midnightblue;
     display: flex;
     justify-content: right;
     flex-wrap: wrap;
     background-attachment: fixed;
     background-position: 80%;
+    width: 100%;
 }
 
 .hero h2 {
@@ -96,8 +100,8 @@ body p {
 }
 
 .about-me p {
-    font-size: 18px;
-    margin: 50px auto 0 auto;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .work {
@@ -117,8 +121,12 @@ body p {
 }
 
 .run-buddy img {
-    width: 100%;
-    max-height: 900px;
+    background-color: white;
+    display: block;
+     max-width: 900px;
+     max-height: 900px;
+     width: auto;
+     height: auto;
 }
 
 .bottom-left {
@@ -132,17 +140,28 @@ body p {
 }
 
 .horiseon { 
-    position: relative;
+    margin: 20px auto 20px 95px;
     display: inline-block;
+    position: relative;
     text-align: center;
     color: white;
  }
  
  .horiseon img {
-     width: 100%;
-     max-height: 900px;
+     background-color: white;
+     display: block;
+     max-width: 500px;
+     max-height: 500px;
+     width: auto;
+     height: auto;
  }
- 
+
+.horiseon img:hover {
+        opacity: .5;
+    }
+.run-buddy img:hover {
+    opacity: .5;
+}
  .bottom-right {
      padding: 25px;
      background-color: midnightblue;
@@ -150,7 +169,7 @@ body p {
      font-weight: bold;
      position: absolute;
      bottom: 8px;
-     left: 16px;
+     right: 16px;
  }
 
 .contact-me{
@@ -172,3 +191,63 @@ body p {
     margin: 50px auto 0 auto;
     justify-content: space-evenly;
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+    .hero {
+        width: 100%;
+    }
+  
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+    .run-buddy img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+  
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+  
+    .contact-me {
+      text-align: center;
+    }
+  
+    .contact-me > * {
+      flex: 0 100%;
+    }
+  
+    .contact-me {
+      order: 3;
+    }
+}
+  }}
