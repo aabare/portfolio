@@ -150,8 +150,8 @@ body p {
  .horiseon img {
      background-color: white;
      display: block;
-     max-width: 500px;
-     max-height: 500px;
+     max-width: 300px;
+     max-height: 300px;
      width: auto;
      height: auto;
  }
